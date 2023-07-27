@@ -14,6 +14,8 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,700&display=swap');
 
+
+
     :root {
       --Softblue: hsl(215, 51%, 70%);
       --Cyan: hsl(178, 100%, 50%);
@@ -30,6 +32,7 @@
       align-items: center;
       height: 80vh;
       margin: 0;
+      background-color: var(--Verydarkblue1);
     }
 
     .container {
@@ -39,17 +42,115 @@
     }
 
     .box {
+      position: relative;
+      top: 0;
+      left: 0;
       padding: 18px;
       box-shadow: 1;
-      background-color: hsl(0, 0%, 100%);
       height: 470px;
+      background-color: var(--Verydarkblue2);
       border-radius: 25px;
     }
 
-    img {
+    .image {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    .image img {
       height: 100%;
       width: 100%;
       border-radius: 25px;
+      transform: rotate(270deg);
+      cursor: pointer;
+    }
+
+    .image .image-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+
+    .image .image-2 img {
+      height: 20px;
+      width: auto;
+    }
+
+
+    .text h4 {
+      color: var(--White);
+    }
+
+    .text h4:hover {
+      color: var(--Cyan);
+      cursor: pointer;
+    }
+
+    .text p {
+      color: var(--Softblue);
+      font-size: small;
+    }
+
+    .icon-with-text {
+      display: inline-block;
+      vertical-align: middle;
+      color: var(--Cyan);
+      font-size: small;
+      margin: 1px 5px 10px;
+      font-weight: 600;
+    }
+
+    .icon-with-text img {
+      margin-right: 5px;
+      height: 13px;
+      width: 8px;
+    }
+
+    .icon-with-text-right {
+      display: inline-flex;
+      margin-inline-start: 85px;
+      color: var(--Softblue);
+      font-weight: 500;
+      align-items: center;
+    }
+
+    .icon-with-text .icon-with-text-right img {
+      margin-right: 5px;
+      height: 15px;
+      width: auto;
+    }
+
+    hr.new1 {
+      margin-bottom: 10px;
+      border: 1px solid var(--Verydarkblue3);
+    }
+
+    .footer {
+      display: inline-flex;
+      margin-top: -12px;
+      color: var(--Softblue);
+      font-size: small;
+      align-items: center;
+    }
+
+    .footer img {
+      margin-right: 10px;
+      height: 23px;
+      width: auto;
+      border: solid var(--White) 1px;
+      border-radius: 25px;
+    }
+
+    .footer .author-name {
+      margin: 5px;
+      color: var(--White);
+      cursor: pointer;
+    }
+
+    .author-name:hover {
+      color: var(--Cyan);
     }
   </style>
 </head>
@@ -59,9 +160,26 @@
     <div class="box">
       <div class="image">
         <img src="./images/image-equilibrium.jpg" alt="main-image">
+        <div class="image-2">
+          <img src="./images/icon-view.svg" alt="icon-view">
+        </div>
       </div>
       <div class="text">
         <h4> Equilibrium #3429 </h4>
+        <p> Our Equilibrium collection promotes balance and calm.</p>
+        <div class="icon-with-text">
+          <img src="./images/icon-ethereum.svg" class="icon-ethereum" height="15px" width="8px"> 0.041 ETH
+          <div class="icon-with-text-right">
+            <img class="time-img" src="./images/icon-clock.svg" alt="clock"> 3 days left
+          </div>
+        </div>
+        <hr class="new1">
+        <div class="footer">
+          <img src="./images/image-avatar.png" alt="avatar">
+          <p>Creation of
+          <div class="author-name">Jules Wyvern </div>
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -73,12 +191,9 @@
 <!--
 
 
-  Our Equilibrium collection promotes balance and calm.
+ 
 
-  0.041 ETH
-  3 days left
   
-  Creation of Jules Wyvern
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
