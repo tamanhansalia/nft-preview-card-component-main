@@ -1,8 +1,13 @@
-Feel Free to use my Project.......
+Feel free to use this code
+
+This is my Live Preview of Website:
+
+https://tamanhansalia.github.io/nft-preview-card-component-main/
+
+Order summary card Challenge By Frontend mentor by Taman Hansaliya
 
 
-
-# Frontend Mentor - NFT preview card component
+# NFT preview card component By Taman Hansaliya
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
